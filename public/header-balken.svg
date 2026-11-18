@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMax slice" fill="none">
+  <!-- Seitenkopf-Motiv, generiert (siehe DESIGN.md, Abschnitt Seitenkopf). Wird als CSS-Hintergrund eingebunden. -->
+  <style>
+    .track { stroke: #4f772d; stroke-opacity: .28; stroke-width: 1.5; stroke-linejoin: round; fill: none; }
+    .track.moss { stroke: #90a955; stroke-opacity: .4; }
+    .halo { stroke: #90a955; stroke-opacity: .28; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake { stroke: #4f772d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake.deep { stroke: #31572c; }
+    .snake.moss { stroke: #90a955; }
+    .node { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .85; stroke-width: 2; }
+    .node.solid { fill: #4f772d; stroke: #f8faf5; }
+    .pulse { fill: none; stroke: #4f772d; stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: pulse 3.6s ease-out infinite; }
+    .tag rect { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .45; }
+    .tag text, .lbl { fill: #31572c; font: 700 12px/1 system-ui, -apple-system, sans-serif; letter-spacing: .06em; }
+    .lbl.soft { fill: #4f772d; fill-opacity: .6; font-weight: 600; }
+    @keyframes run { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { transform: scale(1); stroke-opacity: .7; } 100% { transform: scale(5); stroke-opacity: 0; } }
+    @keyframes blink { 0%, 100% { opacity: .18; } 40%, 60% { opacity: 1; } }
+    @keyframes rise { 0% { transform: scaleY(0); } 18%, 82% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spinr { to { transform: rotate(-360deg); } }
+    @keyframes charge { 0%, 8% { opacity: .12; } 22%, 88% { opacity: 1; } 100% { opacity: .12; } }
+
+    .bar { fill: #4f772d; fill-opacity: .14; stroke: #4f772d; stroke-opacity: .5; stroke-width: 1.5; transform-box: fill-box; transform-origin: bottom; animation: rise 9s cubic-bezier(.16,1,.3,1) infinite; }
+    .bar.hl { fill: #90a955; fill-opacity: .45; stroke: #31572c; }
+    .goal { stroke: #31572c; stroke-opacity: .45; stroke-width: 1.5; stroke-dasharray: 6 8; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .halo, .pulse { opacity: 0; }
+      .snake { stroke-dasharray: none !important; stroke-opacity: .5; }
+    }
+  </style>
+  <rect class="bar" x="600" y="240" width="40" height="300" rx="4" style="animation-delay:0.00s"/>
+  <rect class="bar" x="662" y="260" width="40" height="280" rx="4" style="animation-delay:0.12s"/>
+  <rect class="bar" x="724" y="250" width="40" height="290" rx="4" style="animation-delay:0.24s"/>
+  <rect class="bar" x="786" y="290" width="40" height="250" rx="4" style="animation-delay:0.36s"/>
+  <rect class="bar" x="848" y="310" width="40" height="230" rx="4" style="animation-delay:0.48s"/>
+  <rect class="bar" x="910" y="335" width="40" height="205" rx="4" style="animation-delay:0.60s"/>
+  <rect class="bar" x="972" y="360" width="40" height="180" rx="4" style="animation-delay:0.72s"/>
+  <rect class="bar" x="1034" y="390" width="40" height="150" rx="4" style="animation-delay:0.84s"/>
+  <rect class="bar hl" x="1096" y="415" width="40" height="125" rx="4" style="animation-delay:0.96s"/>
+  <path class="track" d="M560 540 H1200"/>
+  <path class="goal" d="M560 210 L1180 430"/>
+  <text class="lbl soft" x="900" y="250">Zielpfad</text>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 120 880; animation-duration: 9s; animation-delay: 0s;" d="M620 222 L682 242 L744 232 L806 272 L868 292 L930 317 L992 342 L1054 372 L1116 397"/>
+  <path class="snake deep" pathLength="1000" style="stroke-dasharray: 120 880; animation-duration: 9s; animation-delay: 0s;" d="M620 222 L682 242 L744 232 L806 272 L868 292 L930 317 L992 342 L1054 372 L1116 397"/>
+  <circle class="node" cx="620.0" cy="222" r="4"/>
+  <circle class="node" cx="744.0" cy="232" r="4"/>
+  <circle class="node" cx="868.0" cy="292" r="4"/>
+  <circle class="node" cx="992.0" cy="342" r="4"/>
+  <circle class="node solid" cx="1116.0" cy="397" r="5"/>
+  <circle class="pulse" cx="1116" cy="397" r="5" style="animation-delay:0s"/>
+  <text class="lbl soft" x="608" y="564">Q1</text>
+  <text class="lbl soft" x="732" y="564">Q3</text>
+  <text class="lbl soft" x="856" y="564">Q5</text>
+  <text class="lbl soft" x="980" y="564">Q7</text>
+  <text class="lbl soft" x="1104" y="564">Q9</text>
+  <g class="tag"><rect x="996.0" y="345" width="126" height="26" rx="13"/><text x="1007.0" y="362">kg CO₂e / Stk</text></g>
+  <path class="track moss" d="M-20 140 H340 V110 H560 V150 H760"/>
+  <path class="snake moss" pathLength="1000" style="stroke-dasharray: 80 920; animation-duration: 16s; animation-delay: -6s;" d="M-20 140 H340 V110 H560 V150 H760"/>
+
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMax slice" fill="none">
+  <!-- Seitenkopf-Motiv, generiert (siehe DESIGN.md, Abschnitt Seitenkopf). Wird als CSS-Hintergrund eingebunden. -->
+  <style>
+    .track { stroke: #4f772d; stroke-opacity: .28; stroke-width: 1.5; stroke-linejoin: round; fill: none; }
+    .track.moss { stroke: #90a955; stroke-opacity: .4; }
+    .halo { stroke: #90a955; stroke-opacity: .28; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake { stroke: #4f772d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake.deep { stroke: #31572c; }
+    .snake.moss { stroke: #90a955; }
+    .node { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .85; stroke-width: 2; }
+    .node.solid { fill: #4f772d; stroke: #f8faf5; }
+    .pulse { fill: none; stroke: #4f772d; stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: pulse 3.6s ease-out infinite; }
+    .tag rect { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .45; }
+    .tag text, .lbl { fill: #31572c; font: 700 12px/1 system-ui, -apple-system, sans-serif; letter-spacing: .06em; }
+    .lbl.soft { fill: #4f772d; fill-opacity: .6; font-weight: 600; }
+    @keyframes run { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { transform: scale(1); stroke-opacity: .7; } 100% { transform: scale(5); stroke-opacity: 0; } }
+    @keyframes blink { 0%, 100% { opacity: .18; } 40%, 60% { opacity: 1; } }
+    @keyframes rise { 0% { transform: scaleY(0); } 18%, 82% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spinr { to { transform: rotate(-360deg); } }
+    @keyframes charge { 0%, 8% { opacity: .12; } 22%, 88% { opacity: 1; } 100% { opacity: .12; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .halo, .pulse { opacity: 0; }
+      .snake { stroke-dasharray: none !important; stroke-opacity: .5; }
+    }
+  </style>
+  <path class="track " d="M-20 520 H200 V480 H360 V500 H520 V400 H640 V420 H800 V300 H920 V320 H1060 V180 H1220"/>
+  <path class="track moss" d="M-20 580 H260 V540 H440 V460 H600 V480 H760 V380 H880 V260 H1000 V280 H1120 V220 H1220"/>
+  <path class="track " d="M-20 120 H300 V160 H560 V100 H720 V140 H960 V80 H1220"/>
+  <path class="track moss" d="M420 600 V560 H680 V520 H840 V440 H980 V400 H1100 V340 H1220"/>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 11s; animation-delay: 0s;" d="M-20 520 H200 V480 H360 V500 H520 V400 H640 V420 H800 V300 H920 V320 H1060 V180 H1220"/>
+  <path class="snake " pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 11s; animation-delay: 0s;" d="M-20 520 H200 V480 H360 V500 H520 V400 H640 V420 H800 V300 H920 V320 H1060 V180 H1220"/>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 15s; animation-delay: -5s;" d="M-20 580 H260 V540 H440 V460 H600 V480 H760 V380 H880 V260 H1000 V280 H1120 V220 H1220"/>
+  <path class="snake moss" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 15s; animation-delay: -5s;" d="M-20 580 H260 V540 H440 V460 H600 V480 H760 V380 H880 V260 H1000 V280 H1120 V220 H1220"/>
+  <path class="snake deep" pathLength="1000" style="stroke-dasharray: 60 940; animation-duration: 19s; animation-delay: -11s;" d="M-20 120 H300 V160 H560 V100 H720 V140 H960 V80 H1220"/>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 70 930; animation-duration: 13s; animation-delay: -3s;" d="M420 600 V560 H680 V520 H840 V440 H980 V400 H1100 V340 H1220"/>
+  <path class="snake " pathLength="1000" style="stroke-dasharray: 70 930; animation-duration: 13s; animation-delay: -3s;" d="M420 600 V560 H680 V520 H840 V440 H980 V400 H1100 V340 H1220"/>
+  <circle class="pulse" cx="1060" cy="180" r="5" style="animation-delay:0s"/>
+  <circle class="pulse" cx="800" cy="300" r="5" style="animation-delay:1.8s"/>
+  <circle class="pulse" cx="1100" cy="340" r="5" style="animation-delay:0.9s"/>
+  <circle class="node" cx="520" cy="400" r="4"/>
+  <circle class="node solid" cx="800" cy="300" r="5"/>
+  <circle class="node" cx="880" cy="260" r="4"/>
+  <circle class="node solid" cx="1060" cy="180" r="6"/>
+  <circle class="node" cx="960" cy="80" r="4"/>
+  <circle class="node" cx="980" cy="400" r="4"/>
+  <circle class="node" cx="1100" cy="340" r="5"/>
+  <circle class="node" cx="640" cy="420" r="3.5"/>
+  <g class="tag"><rect x="1076" y="140" width="70" height="26" rx="13"/><text x="1087" y="157">t CO₂e</text></g>
+  <g class="tag"><rect x="818" y="262" width="46" height="26" rx="13"/><text x="829" y="279">kWh</text></g>
+  <g class="tag"><rect x="1000" y="226" width="78" height="26" rx="13"/><text x="1011" y="243">Scope 3</text></g>
+  <g class="tag"><rect x="976" y="44" width="46" height="26" rx="13"/><text x="987" y="61">DPP</text></g>
+
+</svg>

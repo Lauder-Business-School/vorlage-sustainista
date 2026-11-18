@@ -1,0 +1,67 @@
+{
+ "preparation": [
+  {
+   "id": "T21",
+   "contribution": "Zustandsbeleg, Produktidentität und Entscheidung verbinden",
+   "prepare": "Ein Schema für Messgröße, Gültigkeitsgrenze und Auslesung spezifizieren",
+   "partners": "Sensoranbieter und fachliche Produktprüfung"
+  },
+  {
+   "id": "T22",
+   "contribution": "Deklaration, Messung und Abweichung nachvollziehbar verknüpfen",
+   "prepare": "Labor- und Sensormetadaten im Materialprofil unterscheiden",
+   "partners": "Verwerter, Messsystem und repräsentative Probenahme"
+  },
+  {
+   "id": "T23",
+   "contribution": "Komponentenidentität und tatsächliche Bearbeitung dokumentieren",
+   "prepare": "Beziehungen zwischen Produkt, Modul und Material sowie sichere Rückmeldeformate planen",
+   "partners": "Anlagenbetreiber, Herstellerdaten und Sicherheitsprüfung"
+  },
+  {
+   "id": "T24",
+   "contribution": "Stoffströme mit zulässigen Verfahren und realen Ergebnissen verbinden",
+   "prepare": "Eingangsmerkmale, Annahmekriterien und Prozessbilanzen strukturieren",
+   "partners": "Geeignetes Verfahren, Betreiber und Abnehmer des Outputs"
+  },
+  {
+   "id": "T25",
+   "contribution": "Messung, Modellannahme und Umweltbewertung gemeinsam versionieren",
+   "prepare": "Herkunft experimenteller Daten und Skalierungsannahmen kennzeichnen",
+   "partners": "Forschungslabor und industrielle Materialprüfung"
+  },
+  {
+   "id": "T26",
+   "contribution": "Langfristige Prüfbarkeit, Export und Anbieterwechsel unterstützen",
+   "prepare": "Kryptografische Bestandsaufnahme, Datenexport und Migrationsfähigkeit prüfen",
+   "partners": "Sicherheits-, Archiv- und Vertrauensdienste"
+  },
+  {
+   "id": "T27",
+   "contribution": "Ein Materialresultat mit Prüfstatus und späterer Bewertung verbinden",
+   "prepare": "Einen konkreten Kundennutzen und eine starke klassische Referenz definieren",
+   "partners": "Materialforschung, geeignete Hardware und reproduzierbarer Vorteil"
+  },
+  {
+   "id": "T28",
+   "contribution": "Herkunft und lokale Umweltannahmen in Entscheidungen sichtbar machen",
+   "prepare": "Räumliche Daten mit Herkunft, Zeitraum und Unsicherheit ergänzen",
+   "partners": "Verifizierte Lieferkette, Umweltmodell und Datenrechte"
+  }
+ ],
+ "scenarios": [
+  {
+   "title": "Zusammenarbeit gelingt",
+   "text": "Hersteller, Nutzer und Verwerter stellen passende Daten bereit. Offene Austauschformate, belastbare Messungen und unabhängige Prüfungen ermöglichen integrierte Anwendungen. Sustainista würde bestätigte Kundenvorgänge schrittweise erweitern. Der tatsächliche Nutzen bestimmt Umfang und Zeitpunkt."
+  },
+  {
+   "title": "Viele getrennte Lösungen bleiben bestehen",
+   "text": "Anbieter nutzen unterschiedliche Formate, Herstellerdaten fehlen und Betriebskosten bleiben hoch. Einzelne Technikbausteine funktionieren, die breite Verbindung gelingt nicht. Sustainista sollte dann auf begrenzte, wirtschaftliche Anwendungsfälle und nachvollziehbare Übergaben setzen."
+  },
+  {
+   "title": "Ein Feld bringt keinen ausreichenden Vorteil",
+   "text": "Ein Sensor erhöht die Umweltlast, ein Recyclingprozess liefert ungeeigneten Output oder eine Quantensimulation schlägt die klassische Referenz nicht. Die richtige Entscheidung kann sein, die Anwendung zurückzustellen. Ein nachvollziehbar beendetes Experiment ist ein Ergebnis; der Radar muss kein positives Zukunftsbild erzwingen."
+  }
+ ],
+ "scenarioOutro": "Vor einer Hochstufung sind jeweils realer Kundenbedarf, geeignete Daten, reproduzierbarer technischer Nutzen und ein tragfähiger Betrieb zu prüfen. Neue Gesetzesvorhaben, Marktvolumina und Leistungen bis 2040 werden nicht erfunden. Jährlich werden die Langfristfelder zusätzlich zur laufenden Quellenpflege grundlegend neu bewertet. Das ist ein vorgeschlagener Redaktionsrhythmus, keine bereits eingerichtete Automation."
+}

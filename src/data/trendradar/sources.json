@@ -1,0 +1,443 @@
+[
+ {
+  "id": "S01",
+  "title": "Sustainista öffentliches Portfolio",
+  "publisher": "Sustainista",
+  "type": "Unternehmensquelle",
+  "url": "https://www.example.invalid/",
+  "altUrl": null,
+  "note": "Grundlage der Produktzuordnung. Marketingangaben sind kein unabhängiger Nachweis technischer Implementierung oder Kundenresultate."
+ },
+ {
+  "id": "S02",
+  "title": "Technology Radar FAQ",
+  "publisher": "Thoughtworks",
+  "type": "Methodik aus Unternehmenspraxis",
+  "url": "https://www.thoughtworks.com/radar/faq",
+  "altUrl": null,
+  "note": "Unterscheidung von Empfehlung und technischem Eintrag. Die Sustainista-Zeitringe sind eine eigene Anpassung."
+ },
+ {
+  "id": "S03",
+  "title": "Packaging and Packaging Waste Regulation",
+  "publisher": "Europäische Kommission",
+  "type": "Amtliche Erläuterung",
+  "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
+  "altUrl": null,
+  "note": "PPWR 2025/40, Grundanwendung am 12. August 2026 und Staffelung. Für eine konkrete Pflicht Artikel und Detailakte heranziehen."
+ },
+ {
+  "id": "S04",
+  "title": "Batterieverordnung 2023/1542 konsolidierte Fassung vom 13 August 2026",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R1542-20260813",
+  "altUrl": null,
+  "note": "Insbesondere Artikel 13, 77 und 78 sowie Anhang XIII. Batteriepass und allgemeine QR-Kennzeichnung unterscheiden."
+ },
+ {
+  "id": "S05",
+  "title": "ESPR und Energiekennzeichnung Arbeitsplan 2025 bis 2030",
+  "publisher": "Europäische Kommission",
+  "type": "Amtlicher Arbeitsplan COM 2025 187",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0187",
+  "altUrl": null,
+  "note": "Produktprioritäten und indikative Annahmejahre. Ein Arbeitsplan ist keine allgemeine Anwendungsfrist für Produktpässe."
+ },
+ {
+  "id": "S06",
+  "title": "DPP Register und semantischer Datenspeicher 2026/1778",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=OJ:L_202601778",
+  "altUrl": null,
+  "note": "Insbesondere Artikel 11 und 12 zu Datenmodellen und Semantik. Operative Verfügbarkeit einzelner Schnittstellen wurde nicht getestet."
+ },
+ {
+  "id": "S07",
+  "title": "Omnibus I Richtlinie 2026/470",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/eli/dir/2026/470/oj/eng",
+  "altUrl": null,
+  "note": "Änderungen bei Berichts- und Sorgfaltspflichten. Geltungsbereich, Übergänge und nationale Umsetzung gesondert prüfen."
+ },
+ {
+  "id": "S08",
+  "title": "Voluntary Standard Delegierte Verordnung 2026/1560",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/eli/reg_del/2026/1560/oj/eng",
+  "altUrl": null,
+  "note": "In Kraft seit 24. September 2026. Artikel 3 gilt für Geschäftsjahre ab 1. Januar 2027. Bericht bleibt freiwillig."
+ },
+ {
+  "id": "S09",
+  "title": "VSME Digital Template and XBRL Taxonomy",
+  "publisher": "EFRAG",
+  "type": "Technische Primärquelle",
+  "url": "https://www.efrag.org/en/vsme-digital-template-and-xbrl-taxonomy",
+  "altUrl": null,
+  "note": "Vorlagen und Exportwerkzeuge. VS-Update laut geprüftem Stand für Q4 2026 geplant; vor Implementierung aktuelle Version prüfen."
+ },
+ {
+  "id": "S10",
+  "title": "PACT Methodology Version 3",
+  "publisher": "WBCSD",
+  "type": "Methodischer Branchenstandard",
+  "url": "https://www.wbcsd.org/resources/pact-methodology-version-3/",
+  "altUrl": null,
+  "note": "Methodik für Produktfußabdrücke. Nicht mit einer allgemeinen gesetzlichen PCF-Pflicht gleichsetzen."
+ },
+ {
+  "id": "S11",
+  "title": "PACT Technical Specifications 3.0.3",
+  "publisher": "WBCSD",
+  "type": "Technische Spezifikation",
+  "url": "https://wbcsd.github.io/tr/data-exchange-protocol/latest/",
+  "altUrl": null,
+  "note": "Geprüfte Fassung vom 18. November 2025. Der latest-Link kann später eine neue Fassung zeigen; Version bei Entwicklung festhalten."
+ },
+ {
+  "id": "S12",
+  "title": "Construction Products Regulation 2024 Revision",
+  "publisher": "Europäische Kommission",
+  "type": "Amtliche Erläuterung",
+  "url": "https://single-market-economy.ec.europa.eu/sectors/construction/construction-products-regulation-cpr/cpr-2024-revision_en",
+  "altUrl": null,
+  "note": "CPR 2024/3110 und schrittweise Umstellung anhand harmonisierter Spezifikationen."
+ },
+ {
+  "id": "S13",
+  "title": "Data Act Verordnung 2023/2854",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng",
+  "altUrl": null,
+  "note": "Datenzugang, Weitergabe und Anwendungstermine. Rechte und Schutzinteressen sind kontextabhängig."
+ },
+ {
+  "id": "S14",
+  "title": "PROV O The PROV Ontology",
+  "publisher": "W3C",
+  "type": "Technischer Standard",
+  "url": "https://www.w3.org/TR/prov-o/",
+  "altUrl": null,
+  "note": "Grundlage für Datenherkunft und Verarbeitungshistorie. Provenienz allein bestätigt keine physische Messung."
+ },
+ {
+  "id": "S15",
+  "title": "OPA Policy Language Rego",
+  "publisher": "Open Policy Agent",
+  "type": "Offizielle technische Dokumentation",
+  "url": "https://www.openpolicyagent.org/docs/policy-language",
+  "altUrl": null,
+  "note": "Mögliche Grundlage strukturierter Entscheidungsregeln. Juristische Übersetzung bleibt eine eigene Aufgabe."
+ },
+ {
+  "id": "S16",
+  "title": "GS1 Digital Link Standard 1.1.3",
+  "publisher": "GS1",
+  "type": "Ratifizierter technischer Standard",
+  "url": "https://ref.gs1.org/standards/digital-link/1.1.3/",
+  "altUrl": null,
+  "note": "Identität und Link-Grundlagen, März 2024. Für Resolver die separate Spezifikation S17 nutzen."
+ },
+ {
+  "id": "S17",
+  "title": "GS1 Conformant Resolver Standard",
+  "publisher": "GS1",
+  "type": "Technischer Standard",
+  "url": "https://ref.gs1.org/standards/resolver/",
+  "altUrl": null,
+  "note": "Verbindung einer Identität mit passenden Webressourcen. Kein vollständiger DPP-Konformitätsnachweis."
+ },
+ {
+  "id": "S18",
+  "title": "Verifiable Credentials Data Model 2.0",
+  "publisher": "W3C",
+  "type": "Technischer Standard",
+  "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+  "altUrl": null,
+  "note": "Signierte Nachweise, Aussteller und Prüfer. Tatsächliche Anerkennung und Qualität des Inhalts getrennt bewerten."
+ },
+ {
+  "id": "S19",
+  "title": "Verifiable Credential JOSE and COSE",
+  "publisher": "W3C",
+  "type": "Technischer Standard",
+  "url": "https://www.w3.org/TR/vc-jose-cose/",
+  "altUrl": null,
+  "note": "Technische Verfahren einschließlich selektiver Offenlegung. Nicht jedes Credential besitzt diese Eigenschaft."
+ },
+ {
+  "id": "S20",
+  "title": "Dataspace Standards Knowledge Base",
+  "publisher": "International Data Spaces Association",
+  "type": "Offizielle Standardübersicht",
+  "url": "https://kb.internationaldataspaces.org/standards/",
+  "altUrl": null,
+  "note": "Dataspace Protocol 2025-1 und ergänzende Protokolle. Genannte ISO-DIS-Dokumente sind Entwürfe, keine hier unterstellten fertigen ISO-Normen."
+ },
+ {
+  "id": "S21",
+  "title": "Corporate Value Chain Scope 3 Standard",
+  "publisher": "GHG Protocol",
+  "type": "Bilanzierungsstandard",
+  "url": "https://ghgprotocol.org/corporate-value-chain-scope-3-standard",
+  "altUrl": null,
+  "note": "Abgrenzung des Unternehmensinventars und Wertschöpfungskette. Unternehmens- und Produktbilanz unterscheiden."
+ },
+ {
+  "id": "S22",
+  "title": "Technical Guidance for Calculating Scope 3 Emissions",
+  "publisher": "GHG Protocol",
+  "type": "Methodischer Leitfaden",
+  "url": "https://ghgprotocol.org/scope-3-calculation-guidance-2",
+  "altUrl": null,
+  "note": "Unterschiedliche Berechnungsmethoden je Kategorie und Datenlage. Keine Vollständigkeitsgarantie durch Rechnungsdaten."
+ },
+ {
+  "id": "S23",
+  "title": "API Integration",
+  "publisher": "EPD International",
+  "type": "Offizielle Schnittstellendokumentation",
+  "url": "https://environdec.com/services/api",
+  "altUrl": null,
+  "note": "ILCD+EPD-Abruf und begrenzter Veröffentlichungszugang. Downstream-Zugang setzt Anfrage und Genehmigung voraus."
+ },
+ {
+  "id": "S24",
+  "title": "Premise Prospective Life Cycle Assessment",
+  "publisher": "Paul Scherrer Institut",
+  "type": "Forschungsinstitut und Originalprojekt",
+  "url": "https://www.psi.ch/en/ta/premise",
+  "altUrl": null,
+  "note": "Kopplung von Hintergrunddaten mit IAM-Szenarien. Kundenanwendung und Variantenwahl sind eigene Entwicklungsvorschläge."
+ },
+ {
+  "id": "S25",
+  "title": "AAS and EU Digital Product Passport Mai 2026",
+  "publisher": "Industrial Digital Twin Association",
+  "type": "Technischer Verbandsbeitrag",
+  "url": "https://industrialdigitaltwin.org/wp-content/uploads/2026/07/IDTA_AAS-ready-for-EU-DPP.pdf",
+  "altUrl": null,
+  "note": "AAS-Teilmodelle und Implementierungsansätze. Allgemeine Verbandsprognosen zur Abdeckung industrieller Produkte werden nicht als gesetzliche Fristen übernommen."
+ },
+ {
+  "id": "S26",
+  "title": "Empowering Consumers Richtlinie 2024/825",
+  "publisher": "EUR-Lex",
+  "type": "EU Rechtsquelle",
+  "url": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng",
+  "altUrl": null,
+  "note": "Maßnahmen gegen irreführende Umweltangaben. Nationale Umsetzungsmaßnahmen gelten ab 27. September 2026."
+ },
+ {
+  "id": "S27",
+  "title": "Ban on destruction of unsold clothes and shoes enters into application",
+  "publisher": "Europäische Kommission",
+  "type": "Amtliche Erläuterung vom 17 Juli 2026",
+  "url": "https://environment.ec.europa.eu/news/ban-destruction-unsold-clothes-and-shoes-enters-application-2026-07-17_en",
+  "altUrl": null,
+  "note": "Anwendung für große Unternehmen seit 19. Juli 2026, mittlere ab 2030. Genaue Waren- und Ausnahmeabgrenzung prüfen."
+ },
+ {
+  "id": "S28",
+  "title": "Simpler digital rules and European Business Wallets",
+  "publisher": "Europäische Kommission",
+  "type": "Vorschlagsankündigung vom 19 November 2025",
+  "url": "https://commission.europa.eu/news-and-media/news/simpler-digital-rules-help-eu-businesses-grow-2025-11-19_en",
+  "altUrl": null,
+  "note": "Historischer Vorschlagsstatus dieser Quelle. Daraus wird weder eine aktuelle Pflicht noch ein verbindlicher DPP-Termin abgeleitet."
+ },
+ {
+  "id": "S29",
+  "title": "LMDX Language Model based Document Information Extraction and Localization",
+  "publisher": "Perot und weitere Autoren",
+  "type": "Forschungsbeitrag auf arXiv 2023",
+  "url": "https://arxiv.org/abs/2309.10952",
+  "altUrl": null,
+  "note": "Verbindung von Extraktion und Fundstelle. Benchmarkresultate werden nicht als Ergebnisse eines Sustainista-Piloten übernommen."
+ },
+ {
+  "id": "S30",
+  "title": "Docling Model Catalog",
+  "publisher": "Docling Projekt",
+  "type": "Offizielle technische Dokumentation",
+  "url": "https://docling-project.github.io/docling/usage/model_catalog/",
+  "altUrl": null,
+  "note": "Layout-, OCR- und Tabellenverarbeitung. Modellwahl und Fachgenauigkeit müssen mit eigenen Belegen geprüft werden."
+ },
+ {
+  "id": "S31",
+  "title": "Model Context Protocol Specification 2026 07 28",
+  "publisher": "MCP Projekt",
+  "type": "Offizielle technische Spezifikation",
+  "url": "https://modelcontextprotocol.io/specification/2026-07-28",
+  "altUrl": null,
+  "note": "Werkzeug- und Ressourcenzugriff. Das Protokoll allein gewährleistet keine sichere oder richtige Fachentscheidung."
+ },
+ {
+  "id": "S32",
+  "title": "Council final green light to simplify artificial intelligence rules",
+  "publisher": "Rat der Europäischen Union",
+  "type": "Amtliche Mitteilung vom 29 Juni 2026",
+  "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/",
+  "altUrl": null,
+  "note": "Geänderte AI-Act-Zeitplanung. Vor einer konkreten Klassifizierung die veröffentlichte Gesetzesfassung und den Einsatzfall prüfen."
+ },
+ {
+  "id": "S33",
+  "title": "Emission Impossible privacy preserving carbon emissions claims",
+  "publisher": "Autoren des Forschungsbeitrags",
+  "type": "Forschungsbeitrag als Preprint 2025",
+  "url": "https://arxiv.org/abs/2506.16347",
+  "altUrl": null,
+  "note": "Untersuchte Energie- und Cloud-Lieferkette. Übertragbarkeit, Kosten und Anerkennung in anderen Sektoren bleiben offen."
+ },
+ {
+  "id": "S34",
+  "title": "Multi objective design space exploration using explainable surrogate models",
+  "publisher": "Autoren des Originalbeitrags",
+  "type": "Wissenschaftlicher Originalbeitrag 2024",
+  "url": "https://link.springer.com/article/10.1007/s00158-024-03769-z",
+  "altUrl": null,
+  "note": "Untersuchte Anwendungsfälle stammen aus aerodynamischem Design. Kombination mit LCA und zirkulären Kundenprodukten ist ausdrücklich eine eigene Hypothese."
+ },
+ {
+  "id": "S35",
+  "title": "Technology and Innovation Radar Methodology",
+  "publisher": "ENISA",
+  "type": "Amtliche Methodik 2026",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2026-04/Emerging%20Cybersecurity%20Technologies%20Radar%20Methodology.pdf",
+  "altUrl": null,
+  "note": "Strukturierte Signalsuche, Bewertung und Validierung. Für Sustainista keine abgeschlossene Expertenvalidierung behauptet."
+ },
+ {
+  "id": "S36",
+  "title": "Ecoresorbable chipless temperature-responsive tag made from biodegradable materials for sustainable IoT",
+  "publisher": "Bourely et al., Nature Communications",
+  "type": "Wissenschaftlicher Originalbeitrag 2025",
+  "url": "https://www.nature.com/articles/s41467-025-65458-9",
+  "altUrl": null,
+  "note": "Nachweis eines passiven Temperaturindikators unter beschriebenen Versuchsbedingungen. Kein vollständiger Datenlogger, kein Nachweis universeller Produkt- oder Batterieeignung; Abbauversuch nicht mit jeder realen Entsorgungsroute gleichsetzen."
+ },
+ {
+  "id": "S37",
+  "title": "ReCircE: Lebenszyklusakte, Sensorik und KI-basierte Sortierung",
+  "publisher": "Fraunhofer IWKS",
+  "type": "Primäre Projektbeschreibung und Publikationsübersicht",
+  "url": "https://www.iwks.fraunhofer.de/de/projekte/abgeschlossene-projekte/recirce.html",
+  "altUrl": null,
+  "note": "Verbindet Lebenszyklusinformationen mit sensorgestützter Sortierung. Belegt kein vollständiges chemisches Profil oder universellen Nachweis der Materialherkunft."
+ },
+ {
+  "id": "S38",
+  "title": "REINFORCE, Projekt 101104204",
+  "publisher": "Europäische Kommission, CORDIS",
+  "type": "Offizielle Projektbeschreibung",
+  "url": "https://cordis.europa.eu/project/id/101104204",
+  "altUrl": null,
+  "note": "Projektziele zu Diagnostik, robotischer Demontage, Wiederverwendung und Batteriehistorie. Zielbeschreibung nicht als Nachweis vollständig gelöster Serienprozesse ausgeben."
+ },
+ {
+  "id": "S39",
+  "title": "Upcycling of polyamides through chemical hydrolysis and engineered Pseudomonas putida",
+  "publisher": "de Witt et al., Nature Microbiology",
+  "type": "Wissenschaftlicher Originalbeitrag 2025",
+  "url": "https://www.nature.com/articles/s41564-025-01929-5",
+  "altUrl": "https://pubmed.ncbi.nlm.nih.gov/39929973/",
+  "note": "Prüfung über bibliografischen Nachweis und abrufbare Abstract-/Suchauszüge; der vollständige Verlagstext war bei der Recherche nicht zuverlässig abrufbar. Ansatz kombiniert chemische Hydrolyse und mikrobielle Weiterverarbeitung; keine Behauptung rein enzymatischen Recyclings beliebiger Mischtextilien."
+ },
+ {
+  "id": "S40",
+  "title": "Standardization guidelines and future trends for PET hydrolase research",
+  "publisher": "Nature Communications",
+  "type": "Wissenschaftlicher Beitrag zu Forschungs- und Prüfmethodik 2025",
+  "url": "https://www.nature.com/articles/s41467-025-60016-9",
+  "altUrl": null,
+  "note": "Geprüft anhand abrufbarer Titel- und Forschungszusammenfassung; weiterführende Volltextprüfung vor Verfahrensauswahl nötig. Bezieht sich auf PET-Hydrolase-Forschung, Vergleichbarkeit und konkrete Bedingungen; nicht auf ein universelles Kunststoffverfahren."
+ },
+ {
+  "id": "S41",
+  "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+  "publisher": "Szymanski et al., Nature",
+  "type": "Wissenschaftlicher Originalbeitrag 2023",
+  "url": "https://www.nature.com/articles/s41586-023-06734-w",
+  "altUrl": "https://ceder.berkeley.edu/publications/2023_Nathan_Alab.pdf",
+  "note": "Prüfung über bibliografischen Nachweis und abrufbare Forschungszusammenfassung; vollständige Detailprüfung vor technischer Umsetzung nötig. A-Lab demonstriert autonome Synthese und experimentelle Rückkopplung. Die Verbindung mit LCA-Zielen und industrieller Skalierung ist eine eigene Erweiterungshypothese."
+ },
+ {
+  "id": "S42",
+  "title": "Considerations for Achieving Crypto Agility: Strategies and Practices, CSWP 39upd1",
+  "publisher": "NIST",
+  "type": "Offizielle aktualisierte Orientierung",
+  "url": "https://csrc.nist.gov/pubs/cswp/39/upd1/considerations-for-achieving-crypto-agility/final",
+  "altUrl": null,
+  "note": "Fassung mit Aktualisierungen vom 29. Juni 2026, ersetzt CSWP 39 vom Dezember 2025. Orientierung zur Migration und Agilität; kein allgemeiner EU-Rechtsstichtag für Produktpässe."
+ },
+ {
+  "id": "S43",
+  "title": "Module-Lattice-Based Digital Signature Standard, FIPS 204",
+  "publisher": "NIST",
+  "type": "Veröffentlichter technischer Standard 2024",
+  "url": "https://csrc.nist.gov/pubs/fips/204/final",
+  "altUrl": null,
+  "note": "ML-DSA-Signaturstandard. Planungshinweis zu möglichen Korrekturen vom 31. Juli 2026 bei Implementierung beachten. Standardisierung allein bestätigt keine gesamte Produktpass- oder Archivlösung."
+ },
+ {
+  "id": "S44",
+  "title": "Towards near-term quantum simulation of materials",
+  "publisher": "Nature Communications",
+  "type": "Wissenschaftlicher Originalbeitrag 2023",
+  "url": "https://www.nature.com/articles/s41467-023-43479-6",
+  "altUrl": null,
+  "note": "Materialbezogene Algorithmus- und Ressourcenforschung. Keine Behauptung allgemein nutzbarer Quantenüberlegenheit oder geringer Gesamtenergie; Hersteller- und Branchenanwendung ist separat zu prüfen."
+ },
+ {
+  "id": "S45",
+  "title": "Quantum computing for materials research",
+  "publisher": "Fraunhofer IWM",
+  "type": "Primäre Forschungs- und Projektübersicht",
+  "url": "https://www.iwm.fraunhofer.de/en/services/materials-assessment-lifetime-concepts/materialsmodellng/quantum-computing-materials-research.html",
+  "altUrl": null,
+  "note": "Materialbezogene Forschung und hybride Verfahren. Projektziele, verfügbare Grundlagen und nachgewiesener Kundennutzen ausdrücklich auseinanderhalten."
+ },
+ {
+  "id": "S46",
+  "title": "BioDT, Projekt 101057437, Ergebnisse",
+  "publisher": "Europäische Kommission, CORDIS",
+  "type": "Offizielle Projekt- und Ergebnisübersicht",
+  "url": "https://cordis.europa.eu/project/id/101057437/results",
+  "altUrl": null,
+  "note": "Modelle, Demonstratoren und Validierung zu Biodiversität. Kein allgemeiner produktbezogener Natur-Score und keine bereits bestätigte Sustainista-Integration."
+ },
+ {
+  "id": "S47",
+  "title": "Destination Earth",
+  "publisher": "European Space Agency",
+  "type": "Primäre Programmübersicht",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Destination_Earth",
+  "altUrl": null,
+  "note": "Grundlagen und Entwicklung von Umweltzwillingen. Historische Programmziele und Zeitpläne nicht als bereits erreichten vollständigen Erdzwilling ausgeben; aktueller Betriebszugang ist separat zu prüfen."
+ },
+ {
+  "id": "S48",
+  "title": "Life cycle assessment needs predictive spatial modelling for biodiversity and ecosystem services",
+  "publisher": "Chaplin-Kramer et al., Nature Communications",
+  "type": "Wissenschaftlicher Originalbeitrag 2017",
+  "url": "https://www.nature.com/articles/ncomms15065",
+  "altUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5413941/",
+  "note": "Räumliche LCA anhand konkreter Beschaffungsszenarien. Die Quelle ist eine ältere methodische Grundlage, kein Beleg für neue Verfügbarkeit erst ab 2035. Produktbezogene laufende Umweltzwillinge sind ein eigener Anwendungsvorschlag."
+ },
+ {
+  "id": "S49",
+  "title": "Evidence Record Syntax, RFC 4998",
+  "publisher": "IETF / RFC Editor",
+  "type": "Technischer Standard, August 2007",
+  "url": "https://www.rfc-editor.org/rfc/rfc4998.html",
+  "altUrl": null,
+  "note": "Grundlage für erneuerbare Langzeitnachweise. Bei Umsetzung aktuelle Ergänzungen und Errata prüfen, unter anderem die aktualisierten ASN.1-Module in RFC 9169. Kein alleiniger Nachweis rechtlicher Beweiskraft oder unbegrenzter Aufbewahrbarkeit."
+ }
+]

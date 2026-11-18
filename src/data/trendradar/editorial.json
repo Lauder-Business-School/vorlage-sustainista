@@ -1,0 +1,142 @@
+{
+  "strategy": [],
+  "method": [
+    "Entscheidungsfrage: Welche konkreten technischen Fähigkeiten sollte Sustainista aufbauen, pilotieren oder beobachten, damit Kunden Produkt- und Nachhaltigkeitsdaten bis 2040 belastbar nutzen können?",
+    "Einheit der Beobachtung ist eine klar abgegrenzte Fähigkeit mit Kundenvorgang und Datenbedarf. Ein Gesetz allein ist kein Technologietrend. Regulatorische Entwicklungen begründen den Bedarf oder setzen Grenzen.",
+    "Die Auswahl verbindet das öffentliche Portfolio, Primärquellen zu Technik und Regulierung sowie einen konkreten Anwendungsvorschlag. Die fünf Themenfelder dienen der Lesbarkeit und sind kein Beleg für gleiche Marktgröße. Die Kernfassung enthält vier Trends je Feld; die Erweiterung ergänzt unterschiedliche Anzahlen entsprechend dem fachlichen Bezug.",
+    "Die Ringe zeigen den frühesten plausiblen praktischen Einsatz beziehungsweise einen breiteren Ausbau für die betrachteten Kunden. Sie zeigen weder Marktanteile noch gesetzliche Termine. Die Winkel innerhalb eines Themenfelds tragen keine zusätzliche Bedeutung.",
+    "Attraktivität bewertet die Nähe zu Kundenproblemen und Portfolio. Reife beschreibt verfügbare technische Grundlagen. Confidence beschreibt die Belastbarkeit der Einordnung, einschließlich Abhängigkeiten. Wirtschaftlicher Nutzen und interner Produktstatus sind gesondert zu prüfen.",
+    "Aufbauen bedeutet eine gemeinsame Grundlage priorisieren. Pilotieren bedeutet einen begrenzten Anwendungsfall mit überprüfbaren Messgrößen durchführen. Beobachten verlangt einen definierten externen Auslöser. Erkunden bezeichnet eine Forschungsfrage ohne Produktzusage.",
+    "Für die drei besonders folgenreichen technischen Felder Produktidentität, Batterielebenszyklus und Dokumentextraktion ist eine Prüfung anhand von mindestens drei unabhängigen Quellenfamilien vorgesehen. Für Produktidentität liegen bislang EU- und GS1-Quellen vor; eine dritte unabhängige fachliche Perspektive ist noch zu ergänzen. Die Batteriekarte verbindet EU-, GS1- und IDTA-Quellen, die Dokumentextraktion Forschung, Docling und W3C. Mehrere Dokumente desselben Herausgebers zählen nicht als unabhängige Quellenfamilien. Regulatorische, technische und wissenschaftliche Aussagen werden nicht als gegenseitiger Ersatz behandelt. Kunden- und Fachvalidierung bleiben als nächste Schritte offen.",
+    "Version 2026.10-Foresight-2040 beruht auf öffentlich zugänglichen Dokumenten. Es wurden keine Kundeninterviews, internen Systemaudits oder produktiven Benchmarks durchgeführt. Die Anwendungsvorschläge und Einsatzhorizonte sind eigene Einschätzungen. Vor einer Roadmap-Zusage sind die genannten Piloten und eine interne Bewertung erforderlich.",
+    "**Thoughtworks**: Ringe als klare Handlungsempfehlungen und einzelne, diskutierbare Einträge. Sustainista nutzt einen eigenen Zeithorizont und weist die Handlung deshalb separat aus. Eine externe Dokumentenrecherche wird nicht als eigene Produktionserfahrung ausgegeben. [S02]",
+    "**ENISA**: Technologiesignale systematisch erfassen, Reife und Entwicklung beurteilen und Bewertungen validieren. Sustainista übernimmt die strukturierte Trendkarte und sieht eine interne Fachprüfung als nächsten Schritt vor. [S35]"
+  ],
+  "assumptions": [],
+  "magazine": {
+    "lead": [
+      "Der Sustainista Trendradar verbindet 28 konkrete Entwicklungen mit Produktpässen, CO₂-Bilanzen, Kreislaufwirtschaft und KI. Er zeigt, welche Grundlagen heute tragen und welche Anwendungen noch erprobt werden müssen."
+    ],
+    "sections": [
+      {
+        "heading": "Daten für konkrete Entscheidungen",
+        "paras": [
+          "Eine Lieferantenrechnung trifft ein, eine Produktvariante ändert sich, ein Kunde fragt nach dem CO₂-Fußabdruck. Unternehmen brauchen dafür belastbare Angaben, die sich wiederfinden und richtig verwenden lassen. Der Aufwand entsteht häufig dort, wo Informationen zwischen Dokumenten, Tabellen und verschiedenen Systemen wechseln.",
+          "Der Sustainista Trendradar betrachtet 28 konkrete Entwicklungen bis 2040. Die 20 Kerntrends werden durch acht Foresight-Felder für den Zeitraum 2035–2040 ergänzt. Im Mittelpunkt stehen Produkt- und Nachhaltigkeitsdaten, ihre Nachweise und ihre Nutzung in betrieblichen Abläufen. Die Auswahl verbindet unsere Arbeitsfelder ESG-Daten, Produktpässe, LCA und KI-Automatisierung. Sie beschreibt auch mögliche Weiterentwicklungen; eine Einordnung im Radar ist keine Zusage, dass eine Funktion bereits verfügbar ist. [S01]"
+        ]
+      },
+      {
+        "heading": "Nachvollziehbare Daten kommen zuerst",
+        "paras": [
+          "Ein sinnvoller Einstieg ist die Verbindung jeder wichtigen Kennzahl mit ihrer Quelle. Wird ein Verbrauch aus einer Rechnung übernommen, sollten Fundstelle, Einheit und Zeitraum erhalten bleiben. Wird daraus eine Emissionskennzahl berechnet, gehören Faktor und Berechnungsversion dazu. Dann lässt sich eine Korrektur bis zu den betroffenen Ergebnissen verfolgen.",
+          "Solche Belegketten unterstützen mehrere Anwendungen. Ein freigegebener Rohwert kann in einem Bericht oder einer Produktberechnung verwendet werden, wenn die jeweiligen Grenzen passen. Der Radar priorisiert deshalb nachvollziehbare Herkunft, versionierte CO₂-Faktoren und Dokumentextraktion mit Fachprüfung. Die technische Basis ist verfügbar; der tatsächliche Nutzen ist am eigenen Prozess zu messen. [S14, S29, S30]"
+        ]
+      },
+      {
+        "heading": "Produktpässe brauchen eine dauerhafte Identität",
+        "paras": [
+          "Ein Produktpass muss einem Produkt auf der richtigen Ebene zugeordnet werden können. Für eine Charge können andere Informationen nötig sein als für ein einzelnes repariertes Exemplar. Dauerhafte Identifikatoren und Resolver verbinden diese Identität mit den passenden Informationen, auch wenn sich Inhalte oder Anbieter ändern. GS1 stellt hierfür technische Standards bereit. [S16, S17]",
+          "Der regulatorische Horizont verlangt genaue Abgrenzung. Die Batteriepasspflicht gilt ab 18. Februar 2027 für die in der Verordnung genannten Batteriegruppen, darunter Industriebatterien über 2 kWh. Für weitere ESPR-Produktgruppen entstehen Anforderungen über eigene Rechtsakte. Ein im Arbeitsplan genanntes Annahmejahr ist deshalb kein allgemeiner DPP-Stichtag. [S04, S05]",
+          "Für Sustainista leiten wir daraus eine Priorität ab: stabile Produktidentität, erweiterbare Datenprofile und nachvollziehbare Änderungen gemeinsam planen. Bei Batterien können Zustandsdaten und Wiederaufbereitungsereignisse hinzukommen. Ihre Aussagekraft hängt von Messquelle, Methode und tatsächlichem Datenzugang ab."
+        ]
+      },
+      {
+        "heading": "Berichtsstandards bleiben in Bewegung",
+        "paras": [
+          "Auch freiwillige Berichte brauchen Versionen. Der neue Voluntary Standard VS ist seit 24. September 2026 in Kraft. Bestehende VSME-Daten und Vorlagen sollten deshalb kontrolliert auf den neuen Stand überführt werden. Freiwillige Berichterstattung bleibt freiwillig; die Begrenzung bestimmter Datenanfragen folgt einem gesonderten Anwendungszeitpunkt. [S08]",
+          "Der technische Trend dahinter ist ein gepflegtes Datenprofil, aus dem passende Ausgaben entstehen. EFRAG bietet digitale Vorlagen und XBRL-Werkzeuge und plant die VS-Aktualisierung für Q4 2026. Für Unternehmen ist besonders relevant, welche Daten mehrfach nutzbar sind und welche Zusatzfrage tatsächlich neue Informationen verlangt. [S09]"
+        ]
+      },
+      {
+        "heading": "CO₂ Werte werden durch ihren Kontext vergleichbar",
+        "paras": [
+          "Ein Produktfußabdruck ist nur mit seiner Bezugsgröße und Systemgrenze verständlich. Angaben zu Zeitraum, Methode und Datenqualität helfen zu entscheiden, ob ein Lieferantenwert übernommen werden kann. Der PACT-Standard bietet eine Grundlage für einen strukturierten Austausch. Er macht unterschiedliche Berechnungen nicht automatisch vergleichbar. [S10, S11]",
+          "Für Produktentwicklung reicht der Blick auf eine einzige Zahl häufig nicht aus. Eine längere Nutzungsdauer kann höheren Materialeinsatz rechtfertigen; ein anderer Strommix kann Varianten anders bewerten. Prospektive LCA untersucht solche Bedingungen in Szenarien. Die Ergebnisse zeigen mögliche Entscheidungen unter Annahmen und bleiben von einer aktuellen Produktdeklaration getrennt. [S24]"
+        ]
+      },
+      {
+        "heading": "Kreislaufwirtschaft braucht dokumentierte Vorgänge",
+        "paras": [
+          "Bei Retouren und Restposten zählt, was tatsächlich mit der Ware geschieht. Eine vorgeschlagene Weitergabe ist noch kein erledigter Vorgang. Zustand, Entscheidung, Empfänger und Beleg sollten verbunden bleiben. Das gilt ebenso für die Reparatur eines langlebigen Produkts oder die weitere Nutzung einer Batterie.",
+          "Der regulatorische Bezug ist bereits konkret: Große Unternehmen unterliegen seit Juli 2026 dem Verbot, bestimmte unverkaufte Bekleidung und Schuhe zu vernichten. Die PPWR bringt gestaffelte Anforderungen für Verpackungen. Für beide Felder werden gepflegte Produkt- und Materialdaten wichtiger. Der Radar behandelt sie als eigene Anwendungen mit passenden Grenzen und Nachweisen. [S27, S03]"
+        ]
+      },
+      {
+        "heading": "KI braucht einen überprüfbaren Auftrag",
+        "paras": [
+          "KI kann Dokumente lesen, fehlende Angaben erkennen und eine Anfrage vorbereiten. Für einen brauchbaren Prozess muss klar sein, welche Quellen sie verwendet und was sie verändern darf. Fachliche Freigaben, feste Berechnungslogik und ein eigener Prüfdatensatz machen Ergebnisse überprüfbar.",
+          "Werkzeugprotokolle wie MCP erleichtern die Verbindung eines KI-Systems mit anderen Anwendungen. Daraus entsteht noch keine verlässliche Fachentscheidung. Der Radar empfiehlt begrenzte Piloten, etwa zur Vorbereitung von Lieferantenanfragen. Neben Genauigkeit werden Zeitaufwand, Eingriffe, Kosten und Energiebedarf untersucht. [S31]"
+        ]
+      },
+      {
+        "heading": "Langfristige Optionen bleiben offen",
+        "paras": [
+          "Langfristig könnten Partner CO₂-Berechnungen durchführen, ohne vertrauliche Prozessdaten vollständig offenzulegen. Forschung zu kryptografischen Emissionsnachweisen liefert dafür erste Anhaltspunkte. Ihre Anwendung auf typische Kundenprodukte ist noch zu untersuchen. [S33]",
+          "Ein weiteres Forschungsfeld verbindet Produktvarianten mit Umweltwirkungen, Haltbarkeit und Reparaturgrenzen. KI könnte geeignete Optionen suchen und Zielkonflikte sichtbar machen. Dafür braucht es ausreichende Daten, geprüfte Modelle und reale Bestätigung. Wir ordnen diese Anwendung deshalb als langfristige Option mit niedriger Confidence ein. [S34]"
+        ]
+      },
+      {
+        "heading": "Acht weitere Felder für 2035 bis 2040",
+        "paras": [
+          "Der erweiterte Horizont verbindet Produktdaten noch stärker mit der physischen Welt. Passive Zustandsindikatoren könnten einen begrenzten Lagerungsbefund liefern. Sensorbasierte Materialprofile könnten eine Deklaration mit einer geeigneten Messung abgleichen. Passinformationen könnten robotische Demontage unterstützen und deren tatsächliche Ergebnisse dokumentieren. Bereits vorhandene Forschungs- und Projektbausteine sind die Grundlage; die breite Zusammenarbeit der Systeme ist eine Entwicklungshypothese. [S36, S37, S38]",
+          "Weitere Felder betreffen polymerabhängige Recyclingwege und autonome Materialexperimente mit Umweltzielen. Langfristige Nachweise sollten trotz Wechsel der Verfahren und Anbieter prüfbar bleiben. Räumliche Umweltmodelle könnten belegte Herkunft mit Natur- und Wasserwirkungen verbinden. Quantensimulation bleibt eine besonders unsichere Option für ausgewählte Materialprobleme. Jede dieser Anwendungen braucht passende Daten, unabhängige Prüfung und einen Vergleich mit realen Alternativen. [S39, S40, S41, S42, S44, S46, S48]",
+          "Für Sustainista ergibt sich daraus vor allem eine heutige Architekturfrage: Welche Messungen, Ereignisse und Modellannahmen lassen sich später sauber ergänzen? Die Karten zeigen hierzu konkrete Vorbereitungsschritte und Signale für eine erneute Bewertung. Kein Ring verspricht, dass ein Ansatz im Jahr 2040 wirtschaftlich oder in voller Breite verfügbar sein wird."
+        ]
+      },
+      {
+        "heading": "So lesen Sie den Sustainista Trendradar",
+        "paras": [
+          "Die fünf Ringe zeigen den eingeschätzten Einsatzhorizont: heute, 2027–2028, 2029–2031, 2032–2036 und 2037–2040. Die zusätzlichen Foresight-Karten beschreiben bedingte Szenarien im Zeitraum 2035–2040; sie enthalten keine verbindlichen Einführungsdaten. Die fünf Themenfelder verbinden Regulatorik, Produktpässe, CO₂, Umweltwirkungen und Produktentwicklung, Kreislaufwirtschaft sowie KI. Jede Karte nennt Anwendung, Produktbezug, Reife, Gegenargument, Quellen und einen überprüfbaren nächsten Schritt.",
+          "Unsere Einordnung beginnt bei den Grundlagen, die mehrere Anwendungen tragen: nachvollziehbare Belege, dauerhafte Produktidentität und kontrollierte Berechnungen. Unternehmen können daraus einen passenden Pilot auswählen und seine Wirkung messen. Der Radar ist für regelmäßige Aktualisierung mit datierten Fassungen und nachvollziehbaren Änderungsgründen konzipiert.",
+          "Entdecken Sie die Trendkarten und prüfen Sie gemeinsam mit Sustainista, welche Daten und Technologien für Ihr Produkt den nächsten sinnvollen Schritt ermöglichen."
+        ]
+      }
+    ]
+  },
+  "foresightText": {
+    "intro": [
+      "Ein Produktpass kann heute beschreiben, welche Materialien in einem Produkt enthalten sind. Eine spannende nächste Frage lautet: Wie lassen sich diese Angaben mit dem tatsächlichen Zustand, einem Messergebnis oder einer späteren Bearbeitung verbinden? Der erweiterte Sustainista Trendradar betrachtet dafür acht zusätzliche Anwendungsfelder im Zeitraum 2035 bis 2040.",
+      "Die Technologien entstehen dabei nicht erst in diesem Zeitraum. Passive Indikatoren, sensorbasierte Sortierung und automatisierte Materialexperimente werden bereits erforscht oder in abgegrenzten Anwendungen eingesetzt. Unser Ausblick betrifft ihre mögliche Zusammenarbeit in betrieblichen Prozessen. Jede Karte zeigt die vorhandene Grundlage und den Schritt, der noch offen ist."
+    ],
+    "sections": [
+      {
+        "heading": "Ein physischer Beleg ergänzt die Deklaration",
+        "paras": [
+          "Ein passiv auslesbarer Indikator könnte eine bestimmte Lagerungsgrenze dokumentieren. Eine Materialmessung könnte eine deklarierte Stoffklasse bestätigen oder einen Widerspruch anzeigen. Beides wäre nur dann hilfreich, wenn Produktzuordnung, Prüfverfahren und Grenzen verständlich bleiben. Ein einzelner Sensor macht aus einer Angabe keinen umfassend geprüften Produktzustand. [S36, S37]",
+          "Für Händler und Verwerter ergibt sich daraus eine konkrete Datenfrage: Welche Entscheidung benötigt welchen Beleg? Ein brauchbarer Prozess verbindet das Ergebnis mit der freigegebenen Weiterverwendung und erhält auch fehlende oder unsichere Werte."
+        ]
+      },
+      {
+        "heading": "Der Pass kann reale Bearbeitung begleiten",
+        "paras": [
+          "Robotische Demontage ist ein weiteres Entwicklungsfeld. Im Idealfall könnte eine Anlage passende Produktinformationen lesen und nach der Bearbeitung zurückmelden, welche Komponenten tatsächlich entstanden sind. Forschungsprojekte verbinden bereits robotisches Zerlegen mit Batteriehistorien. Breiter Einsatz verlangt sichere Anlagen, geeignete Herstellerdaten und wirtschaftliche Mengen. [S38]",
+          "Auch Recyclingverfahren können sich verändern. Bei bestimmten Polymeren werden biokatalytische oder kombinierte chemisch-biologische Wege untersucht. Ihre Eignung hängt vom realen Stoffstrom ab. Für ein Unternehmen zählt deshalb die nachprüfbare Annahme und Behandlung einer Charge. Eine gute Laborquote allein belegt keinen geschlossenen industriellen Kreislauf. [S39, S40]"
+        ]
+      },
+      {
+        "heading": "Neue Materialien brauchen reale Bestätigung",
+        "paras": [
+          "Autonome Labore können Materialexperimente und die Auswahl weiterer Versuche verbinden. Langfristig wäre eine konsequente Einbeziehung von Umweltzielen interessant. Die Verbindung von Laborresultat, angenommener Skalierung und tatsächlicher Herstellung bleibt jedoch anspruchsvoll. Für Sustainista wäre eine nachvollziehbare Bewertung dieser Daten ein mögliches Arbeitsfeld. [S41]",
+          "Quantensimulation ist eine noch unsicherere Option für ausgewählte Materialprobleme. Ihr Nutzen muss gegen gute klassische Verfahren und reale Messungen geprüft werden. Ein behaupteter Rechenvorteil oder ein günstigeres Materialmodell sagt allein nichts über die Umweltbilanz eines späteren Produkts aus. [S44, S45]"
+        ]
+      },
+      {
+        "heading": "Nachweise müssen länger halten als ein einzelner Anbieter",
+        "paras": [
+          "Ein langlebiges Produkt kann mehrere Eigentümer und Dienstleister erleben. Seine Nachweise sollten weiterhin prüfbar bleiben, wenn Verfahren, Schlüssel oder Anbieter wechseln. Dafür gibt es bereits technische Grundlagen zu kryptografischer Agilität und erneuerbaren Archivnachweisen. Die Planung dieser Übergänge gehört in heutige Datenarchitekturen. [S42, S43, S49]"
+        ]
+      },
+      {
+        "heading": "Der Ort verändert die Umweltbewertung",
+        "paras": [
+          "Bei Rohstoffen und wasserintensiven Lieferketten kann der Standort entscheidend sein. Räumliche Umweltmodelle und Biodiversitätszwillinge bieten dafür Bausteine. Eine produktbezogene Anwendung verlangt zusätzlich belegte Herkunft und transparente Unsicherheit. Öffentliche Umweltkarten können eine unbekannte Lieferkette nicht nachträglich beweisen. [S46, S47, S48]",
+          "Die acht Felder sind Entwicklungshypothesen mit niedriger Confidence für den langfristigen Einsatz. Wir beschreiben, welche Daten und Partnerschaften eine Prüfung ermöglichen würden. Entscheidend bleiben konkrete Kundenprobleme, belastbare Ergebnisse und die Frage, ob eine Anwendung im tatsächlichen Betrieb trägt."
+        ]
+      }
+    ],
+    "cta": "Prüfen Sie die Foresight-Karten und besprechen Sie mit Sustainista, welche Daten Ihr Unternehmen heute vorbereiten kann, damit spätere Möglichkeiten nachvollziehbar bewertet werden können."
+  },
+  "responsibilities": "Vorgeschlagene Zuständigkeiten: Produktverantwortung prüft Portfolio und Kundennutzen, Fachperson für Regulatorik prüft rechtliche Aussagen, technische Verantwortung prüft Machbarkeit und Datenrechte, Redaktion pflegt Versionen und Links. Konkrete Personen sind intern festzulegen.",
+  "reviewRhythm": "Review-Rhythmus: quartalsweise sowie bei relevanten Rechtsakten, Standardänderungen oder Pilotresultaten. Eine rückwirkende Behauptung früherer Funktionen wird vermieden. Für jede Änderung Datum, Quelle, alter und neuer Ring sowie Begründung speichern.",
+  "productPageClaim": "Mögliche Formulierung für Produktseiten: Wir prüfen neue Technologien anhand konkreter Anwendungen, verfügbarer Daten und nachvollziehbarer Ergebnisse. Unser Trendradar zeigt die Einordnung und die offenen Fragen. Das belegt eine methodische Arbeit, ohne einen nicht bestätigten Funktionsstand zu versprechen."
+}

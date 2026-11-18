@@ -1,0 +1,361 @@
+@import "tailwindcss";
+
+/* ── Design tokens — Forest Boardroom ── */
+@theme {
+  /* Brand — Fern Green */
+  --color-brand-50:  #f2f9ea;
+  --color-brand-100: #e1f2ce;
+  --color-brand-200: #c5e4a0;
+  --color-brand-300: #a0cc66;
+  --color-brand-400: #90a955;
+  --color-brand-500: #6a9139;
+  --color-brand-600: #4f772d;
+  --color-brand-700: #31572c;
+  --color-brand-800: #244220;
+  --color-brand-900: #162b14;
+
+  /* Semantic surfaces */
+  --color-canvas:          #f8faf5;
+  --color-surface:         #f1f5ec;
+  --color-border:          #dde5d5;
+  --color-ink:             #1a2117;
+  --color-ink-secondary:   #4a5e44;
+  /* mind. 4.5:1 auf canvas/surface (WCAG 1.4.3) — vorher #7a8e74 (3.4:1) */
+  --color-ink-tertiary:    #5f7359;
+
+  /* Caution: markiert, was wir NICHT behaupten, und Ausfaelle.
+     Vorher stand hier rohes amber-500 (#f59e0b): 2,04:1 gegen canvas und damit
+     unter den 3:1, die WCAG 1.4.11 fuer eine bedeutungstragende Linie verlangt.
+     amber-700 erreicht 4,78:1. Die Farbe ist semantisch, nicht dekorativ, und
+     traegt deshalb einen Namen statt einer Palettennummer. */
+  --color-caution:         #b45309;
+
+  /* Zweite Linienstaerke. Vorher trugen sechs Deckkraftwerte von border-ink/15
+     bis /80 dieselbe Aufgabe, und die Zeichnungen fuehrten mit #c6d4bc einen
+     siebten Wert. #c0c4be (ink/25 aufgeloest) und #c6d4bc stehen bei 1,14:1
+     zueinander, sind also nicht unterscheidbar: ein Wert genuegt.
+     Deckkraft auf Linien ist ausserdem der Weg, auf dem Kontrastfehler
+     unbemerkt entstehen, weil der wirksame Wert nirgends steht. */
+  --color-border-strong:   #c6d4bc;
+
+  /* Typografische Kleingrade.
+     Vorher lagen 10, 11, 12, 13 und 15px als Ad-hoc-Werte nebeneinander,
+     `text-[11px]` allein an 29 Stellen. Zwei Grade reichen: Versalien-Marke
+     und Kleintext. 10px ist gestrichen, darunter liest niemand eine
+     Rechtsgrundlage. Gewicht und Sperrung bleiben Sache der Utility, damit
+     die Reihenfolge der Regeln nicht gegen die Klasse arbeitet. */
+  --text-marke:                 0.6875rem;  /* 11px, Versalien, gesperrt */
+  --text-marke--line-height:    1.45;
+  --text-klein:                 0.75rem;    /* 12px, Kleintext im Fliess */
+  --text-klein--line-height:    1.5;
+
+  /* Lesetext. Tailwinds text-sm (14px) trug rund 60 % des Fliesstexts der
+     Startseite, der Bodygrad (16px) unter 10 %: gemessen am 11.11.2026.
+     15px mit 1,6 Zeilenhoehe hebt den ganzen Bestand an, ohne dass enge
+     Karten umbrechen. text-xs bleibt bei 12px, das ist der Label-Grad. */
+  --text-sm:                    0.9375rem;  /* 15px */
+  --text-sm--line-height:       1.6;
+
+  /* Die beiden grossen Grade. Die Leiter der Seite ist 18 / 24 / 32 / 52px,
+     also Faktor 1,33 zwischen den Stufen und 1,63 zum Hero. Der Bruch ist
+     gewollt: eine Hero-Zeile, die auf der Skala liegt, ist keine. */
+  --text-titel:                 2rem;       /* 32px, Abschnittstitel ab sm */
+  --text-titel--line-height:    1.15;
+  --text-hero:                  3.25rem;    /* 52px, nur die Seitenkopfzeile */
+  --text-hero--line-height:     1.08;
+
+  /* Radien: Karte 10px, Schaltflaeche 6px. Vorher 100+ Mal als
+     rounded-[10px] / rounded-[6px] ausgeschrieben. */
+  --radius-card: 10px;
+  --radius-btn:  6px;
+  --radius-field: 8px;
+}
+
+:root {
+  --brand:      #4f772d;
+  --brand-dark: #31572c;
+  --brand-moss: #90a955;
+  --brand-tint: #f2f9ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8faf5;
+  color: #1a2117;
+  font-family: var(--font-hanken), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #dde8d3;
+  color: #243d1f;
+}
+
+*:focus {
+  outline: none;
+}
+*:focus-visible {
+  outline: 2px solid #4f772d;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #4f772d;
+  outline-offset: 1px;
+}
+
+/* Skip-link — nur sichtbar bei Fokus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 200;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4f772d;
+  background: #f8faf5;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(26,33,23,0.08);
+  outline: 2px solid #4f772d;
+  outline-offset: 2px;
+}
+
+/* Nav-Pill — gemeinsame Klasse (aus Elektro-Design-System) */
+/* 0.625rem statt 0.75rem und kein Umbruch: ab lg (1024px) braucht die Zeile
+   mit sechs Punkten sonst 969px, verfuegbar sind 960px. */
+.nav-pill {
+  padding: 0.375rem 0.625rem;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5e44;
+  border-radius: 6px;
+  transition: color 0.15s, background-color 0.15s;
+}
+.nav-pill:hover {
+  color: #1a2117;
+  background-color: #f1f5ec;
+}
+.nav-pill.active {
+  color: #4f772d;
+  background-color: #f0f5e9;
+  font-weight: 600;
+}
+
+/* ── Animations ── */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-fade-up  { animation: fadeUp  0.55s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-fade-in  { animation: fadeIn  0.4s  cubic-bezier(0.16, 1, 0.3, 1) both; }
+.animate-marquee  { animation: marquee 48s linear infinite; }
+.animate-slide-up { animation: fadeUp  0.35s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.24s; }
+.delay-4 { animation-delay: 0.32s; }
+.delay-5 { animation-delay: 0.40s; }
+.delay-6 { animation-delay: 0.48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-marquee {
+    animation-play-state: paused;
+  }
+}
+
+/* ── Shadows (state-response only — flat at rest) ── */
+
+.shadow-ambient-low {
+  box-shadow: 0 1px 4px oklch(17% 0.018 134 / 6%), 0 4px 16px oklch(17% 0.018 134 / 4%);
+}
+
+.shadow-ambient-medium {
+  box-shadow: 0 2px 8px oklch(17% 0.018 134 / 8%), 0 12px 32px oklch(17% 0.018 134 / 6%);
+}
+
+/* ── Eyebrow — ✦ prefix, Moss Green, Label typestep ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+/* Die Farbe liegt in @layer components, damit text-brand-50/-400 auf dunklen
+   Flächen greifen (Utilities schlagen Components). Ungeschichtet überstimmte sie
+   jede Utility: #4f772d auf brand-700 = 1,58:1. Layout und Grad bleiben bewusst
+   ungeschichtet: an 39 Stellen steht "block" neben "eyebrow", das inline-flex
+   samt Abstand zum ✦ sonst aufheben würde. */
+@layer components {
+  .eyebrow {
+    /* brand-600 statt moss: 4.98:1 Kontrast auf canvas (WCAG 1.4.3) */
+    color: #4f772d;
+  }
+}
+.eyebrow::before {
+  content: '✦';
+  font-size: 0.6em;
+}
+
+/* ── Blocksatz für Fließtext (opt-in pro Seite via .justify-copy) ──
+   Silbentrennung ist bei deutschem Blocksatz Pflicht, sonst reißen
+   Lücken in die Zeilen. lang="de" steht am <html>. */
+.justify-copy p {
+  text-align: justify;
+  hyphens: auto;
+}
+/* Zentriert bleibt zentriert — ob die Klasse am Absatz selbst oder an
+   einem Elternelement hängt. Beide Selektoren liegen bei 0,2,1 und
+   schlagen damit die Blocksatz-Regel (0,1,1). */
+.justify-copy p[class*="text-center"],
+.justify-copy [class*="text-center"] p {
+  text-align: center;
+}
+/* Aufzählungen bleiben linksbündig: in schmalen Karten reißt Blocksatz
+   sonst sichtbare Lücken in kurze Zeilen. */
+.justify-copy li {
+  text-align: left;
+  hyphens: auto;
+}
+
+/* ---------------------------------------------------------------------------
+   Druck. Der interne Showcase wird ausgedruckt und in den Termin mitgenommen;
+   ohne diese Regeln kommen Navigation, Cookie-Banner und Fußzeile mit aufs
+   Papier, und aufgeklappte Abschnitte sind zu.
+   --------------------------------------------------------------------------- */
+@media print {
+  nav, footer, [aria-label="Abschnitte dieser Seite"] { display: none !important; }
+  details { display: block !important; }
+  details > summary { display: none !important; }
+  [role="region"][tabindex] { overflow: visible !important; }
+  table { break-inside: auto; }
+  tr, li, article { break-inside: avoid; }
+  /* Eine Zeichnung, die eine Seitengrenze kreuzt, ist auf beiden Seiten wertlos.
+     figure und dl aus demselben Grund: Bildunterschrift und Bild gehoeren zusammen,
+     und eine aufgeteilte Beschreibungsliste verliert ihre Zuordnung. */
+  svg, figure, dl { break-inside: avoid; }
+  /* Eine Ueberschrift allein am Seitenfuss ist eine verlorene Zeile. */
+  h1, h2, h3 { break-after: avoid; }
+  section { break-before: auto; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.75em; word-break: break-all; }
+  body { background: #fff; }
+}
+
+/* ── Seitenkopf der Unterseiten ──
+   Ein System, sechs Motive (public/header-*.svg, je eine Modifier-Klasse):
+   datenstrom (Standard), balken, kreislauf, netz, matrix, batterie.
+   Aufbau: diagonaler Grünverlauf + zwei weiche Lichtflächen, ein Punkteraster
+   als Messfeld und das animierte Motiv rechts. Die linke Spalte bleibt frei,
+   damit Überschrift und Text ruhig stehen. Köpfe mit Foto (Startseite,
+   Hackathon) nutzen diese Klasse nicht. */
+.page-header {
+  --page-header-motif: url("/header-datenstrom.svg");
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--color-canvas);
+  background-image:
+    radial-gradient(ellipse 55% 75% at 92% 8%, color-mix(in srgb, var(--color-brand-200) 75%, transparent) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 60% at 70% 105%, color-mix(in srgb, var(--color-brand-400) 30%, transparent) 0%, transparent 70%),
+    linear-gradient(105deg, var(--color-canvas) 0%, var(--color-canvas) 38%, var(--color-brand-50) 62%, color-mix(in srgb, var(--color-brand-100) 85%, var(--color-canvas)) 100%);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgb(49 87 44 / 0.22) 1.1px, transparent 1.6px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 95% at 82% 45%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(ellipse 70% 95% at 82% 45%, #000 0%, transparent 78%);
+  pointer-events: none;
+}
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(60%, 900px);
+  z-index: -1;
+  /* Feste Motivgröße, unabhängig von der Kopfhöhe: sonst wächst das Motiv in hohen Köpfen in die Überschrift */
+  background: var(--page-header-motif) right center / min(860px, 62vw) auto no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 30%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 30%);
+  pointer-events: none;
+}
+.page-header--balken    { --page-header-motif: url("/header-balken.svg"); }
+.page-header--kreislauf { --page-header-motif: url("/header-kreislauf.svg"); }
+.page-header--netz      { --page-header-motif: url("/header-netz.svg"); }
+.page-header--matrix    { --page-header-motif: url("/header-matrix.svg"); }
+.page-header--batterie  { --page-header-motif: url("/header-batterie.svg"); }
+@media (max-width: 1023px) {
+  .page-header::after { width: 75%; opacity: 0.55; }
+}
+@media (max-width: 640px) {
+  .page-header::after { width: 100%; opacity: 0.28; background-position: right top; background-size: 560px auto; }
+}
+@media print {
+  .page-header { background-image: none; }
+  .page-header::before, .page-header::after { display: none; }
+}
+
+/* ── LCA-Grafiken: laufende Flusssegmente auf Kanten (pathLength 100) ── */
+.lca-flow {
+  stroke-dasharray: 14 86;
+  animation: lca-flow 3.2s linear infinite;
+}
+@keyframes lca-flow { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .lca-flow { animation: none; stroke-dasharray: none; stroke-opacity: 0; }
+}
+.lca-band { fill: var(--color-brand-300); fill-opacity: 0.35; transition: fill-opacity 150ms; }
+.lca-band--hot { fill: var(--color-brand-500); fill-opacity: 0.45; }
+.lca-band:hover { fill-opacity: 0.75; }
+.lca-halo { paint-order: stroke; stroke: var(--color-canvas); stroke-width: 4px; stroke-linejoin: round; }

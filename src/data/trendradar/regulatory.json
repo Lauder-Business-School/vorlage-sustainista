@@ -1,0 +1,62 @@
+[
+ {
+  "title": "DPP je Produktgruppe",
+  "status": "Rahmen und Arbeitsplan",
+  "date": "Gestaffelt",
+  "text": "ESPR-Anforderungen entstehen produktbezogen. Im Arbeitsplan sind Annahmejahre etwa 2027 für Textilien und 2028 für Möbel indikativ; sie sind keine allgemeinen Anwendungsfristen. [S05]"
+ },
+ {
+  "title": "DPP Register und Semantik",
+  "status": "Durchführungsverordnung 2026/1778",
+  "date": "2026",
+  "text": "Infrastruktur und versionierte Datenmodelle sind geregelt. Die Veröffentlichung eines Rechtsakts belegt nicht, dass jeder operative Endpunkt bereits getestet und verfügbar ist. [S06]"
+ },
+ {
+  "title": "Batteriepass",
+  "status": "Konkreter Anwendungstermin",
+  "date": "18. Februar 2027",
+  "text": "Pass für die in Artikel 77 genannten LMT-, Industrie- über 2-kWh- und EV-Batterien beim Inverkehrbringen oder Inbetriebnehmen. Allgemeine QR-Kennzeichnung ist davon zu unterscheiden. [S04]"
+ },
+ {
+  "title": "Verpackungen",
+  "status": "PPWR mit Staffelung",
+  "date": "12. August 2026 und Folgejahre",
+  "text": "Grundsätzliche Anwendung begonnen. Einzelanforderungen, insbesondere rund um 2030, anhand von Produkt, Artikel und Detailregel prüfen. [S03]"
+ },
+ {
+  "title": "Unverkaufte Bekleidung und Schuhe",
+  "status": "Verbot mit Abgrenzungen",
+  "date": "19. Juli 2026 und 2030",
+  "text": "Große Unternehmen sind bereits erfasst, mittlere ab 2030. Warenumfang, Ausnahmen und nachweisbarer Verbleib sind getrennt zu beurteilen. [S27]"
+ },
+ {
+  "title": "Freiwilliger Berichtsstandard VS",
+  "status": "2026/1560 in Kraft",
+  "date": "24. September 2026",
+  "text": "Migration bestehender VSME-Profile planen. Artikel 3 zur Begrenzung bestimmter Datenanfragen gilt für Geschäftsjahre ab 1. Januar 2027. Freiwilligkeit des Berichts bleibt bestehen. [S08, S09]"
+ },
+ {
+  "title": "CSRD und CSDDD",
+  "status": "EU Richtlinie 2026/470",
+  "date": "2026 mit Übergang und Umsetzung",
+  "text": "Geltungsbereiche und Übergänge wurden geändert. Geschäftsmodell und Marketing nicht auf veraltete Ausweitungsannahmen stützen; nationale Umsetzung und konkreten Unternehmensfall prüfen. [S07]"
+ },
+ {
+  "title": "Umweltangaben gegenüber Verbrauchern",
+  "status": "Richtlinie 2024/825",
+  "date": "27. September 2026",
+  "text": "Mitgliedstaaten wenden die Umsetzungsmaßnahmen ab diesem Datum an. Produktbezug und belastbare Nachweise für verwendete Umweltangaben gezielt prüfen. [S26]"
+ },
+ {
+  "title": "Bauprodukte",
+  "status": "2024/3110 mit Übergang",
+  "date": "Nach Produktfamilie",
+  "text": "Neue harmonisierte Spezifikationen steuern die schrittweise Umstellung. EPD, Leistungsangaben und DPP-Zuordnung brauchen jeweils einen passenden Produktbezug. [S12]"
+ },
+ {
+  "title": "Datenzugang und KI",
+  "status": "Einsatzabhängige Einordnung",
+  "date": "2025 bis 2028 und laufende Änderungen",
+  "text": "Data Act und AI Act im konkreten Vorgang prüfen. Keine pauschale Zugangsberechtigung zu allen Daten und keine generelle Hochrisiko-Einstufung jeder Dokument-KI unterstellen. [S13, S32]"
+ }
+]

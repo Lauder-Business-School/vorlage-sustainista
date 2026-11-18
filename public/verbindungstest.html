@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Verbindungstest für den Prototyp</title>
+  <style>
+    body { font: 1rem/1.5 system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1rem; color: #172033; }
+    label { display: block; font-weight: 600; margin-top: 1rem; }
+    input, button { box-sizing: border-box; font: inherit; padding: .6rem; width: 100%; }
+    button { margin-top: 1rem; background: #193868; color: white; border: 0; cursor: pointer; }
+    #result { white-space: pre-wrap; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Verbindungstest für deinen Prototyp</h1>
+    <p>Trage die Daten deines eigenen Supabase-Projekts ein und führe zuvor die Datei
+      <code>kurs-setup.sql</code> dort im SQL-Editor aus. Nur fiktive Testdaten verwenden.</p>
+    <p>Verwende ausschließlich den <strong>Publishable Key</strong> (beginnt mit
+      <code>sb_publishable_</code>), niemals einen Secret- oder Service-Role-Key.
+      Die Daten werden nur für diesen Abruf verwendet und nicht gespeichert.</p>
+    <form id="test">
+      <label for="url">Eigene Supabase Project URL</label>
+      <input id="url" type="url" placeholder="https://projekt.supabase.co" required>
+      <label for="key">Eigener Publishable Key</label>
+      <input id="key" type="text" autocomplete="off" required>
+      <button type="submit">Verbindung testen</button>
+    </form>
+    <p id="result" role="status" aria-live="polite"></p>
+  </main>
+  <script>
+    document.getElementById("test").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const result = document.getElementById("result");
+      const key = document.getElementById("key").value.trim();
+      let url;
+      try {
+        url = new URL(document.getElementById("url").value.trim());
+      } catch {
+        result.textContent = "Bitte eine gültige Supabase Project URL eingeben.";
+        return;
+      }
+      if (url.protocol !== "https:" || !/^[a-z0-9-]+\.supabase\.co$/.test(url.hostname) ||
+          url.port || url.username || url.password || (url.pathname !== "/" && url.pathname !== "") ||
+          url.search || url.hash) {
+        result.textContent = "Bitte die HTTPS Project URL deines Supabase-Projekts ohne Pfad eingeben.";
+        return;
+      }
+      if (!key.startsWith("sb_publishable_")) {
+        result.textContent = "Bitte ausschließlich einen Publishable Key eingeben, keinen Secret- oder Service-Role-Key.";
+        return;
+      }
+      result.textContent = "Verbindung wird geprüft …";
+      try {
+        const response = await fetch(url.origin + "/rest/v1/lehrveranstaltung_check?select=nachricht&limit=1", {
+          headers: { apikey: key },
+        });
+        if (!response.ok) throw new Error("Supabase antwortet mit HTTP " + response.status);
+        const rows = await response.json();
+        if (!Array.isArray(rows) || typeof rows[0]?.nachricht !== "string") {
+          throw new Error("Keine Testzeile gefunden. Führe kurs-setup.sql in deinem Projekt aus.");
+        }
+        result.textContent = "Verbunden! Nachricht aus deinem Supabase-Projekt: " + rows[0].nachricht;
+      } catch (error) {
+        result.textContent = "Verbindung fehlgeschlagen: " + (error instanceof Error ? error.message : String(error));
+      }
+    });
+  </script>
+</body>
+</html>

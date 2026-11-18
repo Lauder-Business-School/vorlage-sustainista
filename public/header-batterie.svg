@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMax slice" fill="none">
+  <!-- Seitenkopf-Motiv, generiert (siehe DESIGN.md, Abschnitt Seitenkopf). Wird als CSS-Hintergrund eingebunden. -->
+  <style>
+    .track { stroke: #4f772d; stroke-opacity: .28; stroke-width: 1.5; stroke-linejoin: round; fill: none; }
+    .track.moss { stroke: #90a955; stroke-opacity: .4; }
+    .halo { stroke: #90a955; stroke-opacity: .28; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake { stroke: #4f772d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake.deep { stroke: #31572c; }
+    .snake.moss { stroke: #90a955; }
+    .node { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .85; stroke-width: 2; }
+    .node.solid { fill: #4f772d; stroke: #f8faf5; }
+    .pulse { fill: none; stroke: #4f772d; stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: pulse 3.6s ease-out infinite; }
+    .tag rect { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .45; }
+    .tag text, .lbl { fill: #31572c; font: 700 12px/1 system-ui, -apple-system, sans-serif; letter-spacing: .06em; }
+    .lbl.soft { fill: #4f772d; fill-opacity: .6; font-weight: 600; }
+    @keyframes run { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { transform: scale(1); stroke-opacity: .7; } 100% { transform: scale(5); stroke-opacity: 0; } }
+    @keyframes blink { 0%, 100% { opacity: .18; } 40%, 60% { opacity: 1; } }
+    @keyframes rise { 0% { transform: scaleY(0); } 18%, 82% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spinr { to { transform: rotate(-360deg); } }
+    @keyframes charge { 0%, 8% { opacity: .12; } 22%, 88% { opacity: 1; } 100% { opacity: .12; } }
+
+    .shell { fill: #f8faf5; fill-opacity: .7; stroke: #31572c; stroke-opacity: .7; stroke-width: 3; }
+    .term { fill: #31572c; fill-opacity: .7; }
+    .cellb { fill: #4f772d; fill-opacity: .55; animation: charge 6s ease-in-out infinite; }
+    .cellb.hl { fill: #90a955; fill-opacity: .9; }
+    .bolt { fill: #f8faf5; stroke: #31572c; stroke-width: 2; stroke-linejoin: round; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .halo, .pulse { opacity: 0; }
+      .snake { stroke-dasharray: none !important; stroke-opacity: .5; }
+    }
+  </style>
+  <rect class="shell" x="700" y="210" width="400" height="180" rx="22"/>
+  <rect class="term" x="1100" y="266.0" width="22" height="68" rx="8"/>
+  <rect class="cellb" x="712.0" y="222" width="67.2" height="156" rx="10" style="animation-delay:0.0s"/>
+  <rect class="cellb" x="789.2" y="222" width="67.2" height="156" rx="10" style="animation-delay:0.6s"/>
+  <rect class="cellb" x="866.4" y="222" width="67.2" height="156" rx="10" style="animation-delay:1.2s"/>
+  <rect class="cellb" x="943.6" y="222" width="67.2" height="156" rx="10" style="animation-delay:1.8s"/>
+  <rect class="cellb hl" x="1020.8" y="222" width="67.2" height="156" rx="10" style="animation-delay:2.4s"/>
+  <path class="bolt" d="M908.0 256 L878.0 306.0 H902.0 L890.0 344 L926.0 292.0 H904.0 Z"/>
+  <path class="track" d="M-20 470 H240 V430 H420 V450 H560 V330 H700"/>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 10s; animation-delay: 0s;" d="M-20 470 H240 V430 H420 V450 H560 V330 H700"/>
+  <path class="snake " pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 10s; animation-delay: 0s;" d="M-20 470 H240 V430 H420 V450 H560 V330 H700"/>
+  <path class="track moss" d="M-20 130 H300 V170 H520 V150 H600 V270 H700"/>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 14s; animation-delay: -3s;" d="M-20 130 H300 V170 H520 V150 H600 V270 H700"/>
+  <path class="snake moss" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 14s; animation-delay: -3s;" d="M-20 130 H300 V170 H520 V150 H600 V270 H700"/>
+  <circle class="node solid" cx="700" cy="330" r="5"/>
+  <circle class="node solid" cx="700" cy="270" r="5"/>
+  <g class="tag"><rect x="720" y="162" width="142" height="26" rx="13"/><text x="731" y="179">State of Health</text></g>
+  <g class="tag"><rect x="910" y="412" width="126" height="26" rx="13"/><text x="921" y="429">kg CO₂e / kWh</text></g>
+  <g class="tag"><rect x="720" y="412" width="86" height="26" rx="13"/><text x="731" y="429">Rezyklat</text></g>
+  <circle class="pulse" cx="1111" cy="300" r="5" style="animation-delay:0s"/>
+
+</svg>

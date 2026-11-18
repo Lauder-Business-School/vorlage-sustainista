@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMax slice" fill="none">
+  <!-- Seitenkopf-Motiv, generiert (siehe DESIGN.md, Abschnitt Seitenkopf). Wird als CSS-Hintergrund eingebunden. -->
+  <style>
+    .track { stroke: #4f772d; stroke-opacity: .28; stroke-width: 1.5; stroke-linejoin: round; fill: none; }
+    .track.moss { stroke: #90a955; stroke-opacity: .4; }
+    .halo { stroke: #90a955; stroke-opacity: .28; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake { stroke: #4f772d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: run 12s linear infinite; }
+    .snake.deep { stroke: #31572c; }
+    .snake.moss { stroke: #90a955; }
+    .node { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .85; stroke-width: 2; }
+    .node.solid { fill: #4f772d; stroke: #f8faf5; }
+    .pulse { fill: none; stroke: #4f772d; stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: pulse 3.6s ease-out infinite; }
+    .tag rect { fill: #f8faf5; stroke: #4f772d; stroke-opacity: .45; }
+    .tag text, .lbl { fill: #31572c; font: 700 12px/1 system-ui, -apple-system, sans-serif; letter-spacing: .06em; }
+    .lbl.soft { fill: #4f772d; fill-opacity: .6; font-weight: 600; }
+    @keyframes run { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0% { transform: scale(1); stroke-opacity: .7; } 100% { transform: scale(5); stroke-opacity: 0; } }
+    @keyframes blink { 0%, 100% { opacity: .18; } 40%, 60% { opacity: 1; } }
+    @keyframes rise { 0% { transform: scaleY(0); } 18%, 82% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spinr { to { transform: rotate(-360deg); } }
+    @keyframes charge { 0%, 8% { opacity: .12; } 22%, 88% { opacity: 1; } 100% { opacity: .12; } }
+
+    .ring { stroke: #4f772d; stroke-opacity: .3; stroke-width: 1.5; }
+    .ring.dash { stroke: #90a955; stroke-opacity: .55; stroke-dasharray: 3 9; }
+    .orbit { transform-box: view-box; transform-origin: 870px 310px; }
+    .dot { fill: #4f772d; }
+    .dot.moss { fill: #90a955; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .halo, .pulse { opacity: 0; }
+      .snake { stroke-dasharray: none !important; stroke-opacity: .5; }
+    }
+  </style>
+  <circle class="ring" cx="870" cy="310" r="250"/>
+  <circle class="ring dash" cx="870" cy="310" r="175"/>
+  <circle class="ring" cx="870" cy="310" r="100"/>
+  <g class="orbit" style="animation: spin 40s linear infinite">
+    <circle class="dot " cx="1120.0" cy="310.0" r="7"/>
+    <circle class="dot " cx="870.0" cy="560.0" r="7"/>
+    <circle class="dot " cx="620.0" cy="310.0" r="7"/>
+    <circle class="dot " cx="870.0" cy="60.0" r="7"/>
+  </g>
+  <g class="orbit" style="animation: spinr 28s linear infinite">
+    <circle class="dot moss" cx="1045.0" cy="310.0" r="5"/>
+    <circle class="dot moss" cx="957.5" cy="461.6" r="5"/>
+    <circle class="dot moss" cx="782.5" cy="461.6" r="5"/>
+    <circle class="dot moss" cx="695.0" cy="310.0" r="5"/>
+    <circle class="dot moss" cx="782.5" cy="158.4" r="5"/>
+    <circle class="dot moss" cx="957.5" cy="158.4" r="5"/>
+  </g>
+  <g class="orbit" style="animation: spin 18s linear infinite">
+    <circle class="dot " cx="970.0" cy="310.0" r="5"/>
+    <circle class="dot " cx="820.0" cy="396.6" r="5"/>
+    <circle class="dot " cx="820.0" cy="223.4" r="5"/>
+  </g>
+  <path class="halo" pathLength="1000" style="stroke-dasharray: 110 140; animation-duration: 14s; animation-delay: 0s;" d="M1120 310 A250 250 0 1 1 620 310 A250 250 0 1 1 1120 310"/>
+  <path class="snake " pathLength="1000" style="stroke-dasharray: 110 140; animation-duration: 14s; animation-delay: 0s;" d="M1120 310 A250 250 0 1 1 620 310 A250 250 0 1 1 1120 310"/>
+  <circle class="node solid" cx="870" cy="310" r="9"/>
+  <circle class="pulse" cx="870" cy="310" r="5" style="animation-delay:0s"/>
+  <g class="tag"><rect x="827" y="47" width="86" height="26" rx="13"/><text x="838" y="64">Material</text></g>
+  <g class="tag"><rect x="1081" y="297" width="78" height="26" rx="13"/><text x="1092" y="314">Nutzung</text></g>
+  <g class="tag"><rect x="823" y="547" width="94" height="26" rx="13"/><text x="834" y="564">Reparatur</text></g>
+  <g class="tag"><rect x="573" y="297" width="94" height="26" rx="13"/><text x="584" y="314">Recycling</text></g>
+  <path class="track moss" d="M-20 520 H260 V480 H480 V500 H620"/>
+  <path class="snake moss" pathLength="1000" style="stroke-dasharray: 90 910; animation-duration: 13s; animation-delay: -4s;" d="M-20 520 H260 V480 H480 V500 H620"/>
+
+</svg>
